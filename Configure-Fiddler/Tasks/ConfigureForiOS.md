@@ -72,17 +72,19 @@ Decrypt HTTPS Traffic from iOS Devices
 
 8. Tap the **Install** button.
 
- ![Install Profile][6]
+9. In System Settings application navigate to General -> Profiles & Device Management -> Install DO_NOT_TRUST_FiddlerRoot and install profile
 
-9. Tap the **Install** button again.
+ ![SelectProfile][9]
+ 
+ ![InstallProfileIntoSystem.png][10]
+
+10. Tap the **Install** button again.
 
  ![Warning][7]
 
-On iOS 10 and later, after installing the FiddlerRoot certificate, go to *Settings* -> *General* -> *About* -> *Certificate Trust Settings* and manually enable full trust for the FiddlerRoot root certificate. Accept the dialog that says that this will allow a third-party to eavesdrop on all your communications.
+11. In System Settings application navigate to General -> About -> Certificate Trust Settings -> DO_NOT_TRUST_FiddlerRoot and Enable it
 
-10. In System Settings application navigate to General -> Profiles & Device Management -> Install DO_NOT_TRUST_FiddlerRoot and install profile
-
-11. In System Settings application navigate to General -> About -> Certificate Trust Settings -> Enable DO_NOT_TRUST_FiddlerRoot and Enable
+ ![EnableProfile][11]
  
 
 Uninstall FiddlerRoot Certificate
@@ -108,3 +110,6 @@ If you decide to uninstall the root certificate:
 [6]: ../../images/ConfigureForiOS/InstallProfile.png
 [7]: ../../images/ConfigureForiOS/Warning.png
 [8]: http://fiddler2.com/add-ons
+[9]: ../../images/ConfigureForiOS/SelectProfile.png
+[10]: ../../images/ConfigureForiOS/InstallProfileIntoSystem.png
+[11]: ../../images/ConfigureForiOS/EnableProfile.png
