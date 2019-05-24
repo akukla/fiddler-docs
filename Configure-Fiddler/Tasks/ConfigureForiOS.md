@@ -82,8 +82,6 @@ On iOS 10 and later, after installing the FiddlerRoot certificate, go to *Settin
 
 10. In System Settings application navigate to General -> Profiles & Device Management -> Install DO_NOT_TRUST_FiddlerRoot and install profile
 
- ![SelectProfile][8]
-
 11. In System Settings application navigate to General -> About -> Certificate Trust Settings -> Enable DO_NOT_TRUST_FiddlerRoot and Enable
  
 
