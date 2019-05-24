@@ -18,17 +18,21 @@ Configure Fiddler
 
  ![Allow remote computers to connect][1]
 
-3. Restart Fiddler.
+3. Click **Tools > Fiddler Options > HTTPS**. 
 
-4. Ensure your firewall allows incoming connections to the Fiddler process.
+4. Click the checkbox by **Decrypt HTTPS traffic**.
 
-4. Hover over the **Online indicator** at the far right of the Fiddler toolbar to display the IP addresses assigned to Fiddler's machine.
+5. Restart Fiddler.
+
+6. Ensure your firewall allows incoming connections to the Fiddler process.
+
+7. Hover over the **Online indicator** at the far right of the Fiddler toolbar to display the IP addresses assigned to Fiddler's machine.
 
  ![Online Tooltip][2]
 
-5. Verify client iOS device can reach Fiddler by navigating in the browser to **http://FiddlerMachineIP:8888**. This address should return the **Fiddler Echo Service** page.
+8. Verify client iOS device can reach Fiddler by navigating in the browser to **http://FiddlerMachineIP:8888**. This address should return the **Fiddler Echo Service** page.
 
-6. For iPhone: Disable the 3g/4g connection.
+9. For iPhone: Disable the 3g/4g connection.
 
 Set the iOS Device Proxy
 ------------------------
@@ -75,6 +79,13 @@ Decrypt HTTPS Traffic from iOS Devices
  ![Warning][7]
 
 On iOS 10 and later, after installing the FiddlerRoot certificate, go to *Settings* -> *General* -> *About* -> *Certificate Trust Settings* and manually enable full trust for the FiddlerRoot root certificate. Accept the dialog that says that this will allow a third-party to eavesdrop on all your communications.
+
+10. In System Settings application navigate to General -> Profiles & Device Management -> Install DO_NOT_TRUST_FiddlerRoot and install profile
+
+ ![SelectProfile][8]
+
+11. In System Settings application navigate to General -> About -> Certificate Trust Settings -> Enable DO_NOT_TRUST_FiddlerRoot and Enable
+ 
 
 Uninstall FiddlerRoot Certificate
 ---------------------------------
